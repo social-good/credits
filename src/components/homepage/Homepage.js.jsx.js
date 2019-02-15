@@ -32,7 +32,10 @@ class Homepage extends Component {
 			var data = {
 				datasets: [{
 					data: Object.values(Breakdowns[year]),
-					backgroundColor: ['#FF6385', '#63FFE0', '#E3FF63','#FFA063', '#FF63F8', '#6FB8FF','#FFD763', '#B9FF63', '#6AD2FF','#FF7563', '#FFCE63', '#FF63B8']
+					backgroundColor: ['#FF6385', '#63FFE0', '#E3FF63',
+						'#FFA063', '#FF63F8', '#6FB8FF',
+						'#FFD763', '#B9FF63', '#6AD2FF',
+						'#FF7563', '#FFCE63', '#A173FF']
 				}],
 				labels: Object.keys(Breakdowns[year])
 
