@@ -90,3 +90,13 @@
 #crew-gender-chart-department-box-11 {
   border-bottom: none;
 }
+
+/* DIASPORA CHART */
+.crew-diaspora-chart-graph-container {
+  width: 800px;
+  height: 800px; 
+  display: inline-block;
+  border: 1px lightblue solid;
+  padding-left: 10px;
+}
+

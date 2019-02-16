@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import {Doughnut} from 'react-chartjs-2';
 import CrewSlider from '../crew/CrewSlider.js.jsx'
 import CrewGenderChart from '../crew/CrewGenderChart.js'
+import CrewDiasporaChart from '../crew/CrewDiasporaChart.js'
 
 // Data
-import Breakdowns from '../../data/topCenturyBreakdowns.json';
+import Breakdowns from '../../data/topCenturyDepartmentCount.json';
 
 class Homepage extends Component {
 
@@ -52,6 +53,7 @@ class Homepage extends Component {
 				{charts[this.state.displayYear-1900]}
 				<CrewSlider min={1900} max={2018} position={this.state.displayYear} onSlide={this.onSliderMove} />
 				<CrewGenderChart chosenDepartment={'Cast'}/>
+				<CrewDiasporaChart />
 			</div>
 		);
 	}

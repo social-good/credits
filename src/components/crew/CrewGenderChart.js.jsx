@@ -6,7 +6,7 @@ import '../../stylesheets/Crew.css';
 
 // Data
 import GenderCount from '../../data/topCenturyGenderCount.json';
-import DepartmentGenderCounts from '../../data/topCenturyGenderBreakdowns.json';
+import DepartmentGenderCounts from '../../data/topCenturyBreakdownGenderByDepartment.json';
 
 export default class CrewGenderChart extends Component {
 
