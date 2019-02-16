@@ -1,3 +1,5 @@
+/* SLIDER */
+
 .CrewSlider {
   width: 100%; /* Width of the outside container */
 }
@@ -35,4 +37,56 @@
   height: 25px; /* Slider handle height */
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
+}
+
+/* GENDER CHART */
+
+.crew-gender-chart-graph-container {
+  width: 560px;
+  height: 418px; 
+  display: inline-block;
+  border: 1px lightblue solid;
+  padding-left: 10px;
+}
+
+.CrewGenderChartPanel {
+  display: inline-block;
+  width: 240px;
+  background-color: lightblue;
+  height: 420px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  cursor: pointer;
+}
+
+.CrewGenderChartPanel table {
+  border-collapse: collapse;
+}
+
+.CrewGenderChartPanel *[class^='crew-gender-chart-department-box-'] {
+  height: 68px;
+  border-bottom: 1px darkblue solid;
+  vertical-align: middle;
+  text-align: center;
+}
+.CrewGenderChartPanel *[class^='crew-gender-chart-department-box-']:hover {
+  background-color: white;
+}
+.crew-gender-chart-department-box-top {
+  width: 238px;
+  border-bottom: 1px darkblue solid;
+}
+.crew-gender-chart-department-box-left {
+  width: 119px;
+  border-right: 1px darkblue solid;
+}
+.crew-gender-chart-department-box-right {
+  width: 120px;
+}
+
+#crew-gender-chart-department-box-10 {
+  border-bottom: none;
+}
+#crew-gender-chart-department-box-11 {
+  border-bottom: none;
 }

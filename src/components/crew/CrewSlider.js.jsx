@@ -19,7 +19,7 @@ export default class CrewSlider extends Component {
   render() {
     return (
       <div className="CrewSlider">
-      	<input type="range" min="1900" max="2018" value={this.props.position} onChange={this.onMove} class="crew-slider-input-range" id="crew-slider-input-range-0" />
+      	<input type="range" min="1900" max="2018" value={this.props.position} onChange={this.onMove} className="crew-slider-input-range" id="crew-slider-input-range-0" />
       	<div>{this.props.position}</div>
       </div>
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Doughnut} from 'react-chartjs-2';
 import CrewSlider from '../crew/CrewSlider.js.jsx'
+import CrewGenderChart from '../crew/CrewGenderChart.js'
 
 // Data
 import Breakdowns from '../../data/topCenturyBreakdowns.json';
@@ -10,7 +11,7 @@ class Homepage extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			displayYear: 1904
+			displayYear: 1984
 		}
 
 		this.onSliderMove = this.onSliderMove.bind(this);
@@ -50,6 +51,7 @@ class Homepage extends Component {
 				OMG it's the homepage
 				{charts[this.state.displayYear-1900]}
 				<CrewSlider min={1900} max={2018} position={this.state.displayYear} onSlide={this.onSliderMove} />
+				<CrewGenderChart chosenDepartment={'Cast'}/>
 			</div>
 		);
 	}
