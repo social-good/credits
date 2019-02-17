@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
 
+import Closeup0 from '../closeups/Closeup0.js.jsx'
+
 export default class FeedCloseup extends Component {
 
 	render() {
+		var closeup;
+
+		switch (parseInt(this.props.match.params.feedId)) {
+			case 0: 
+				closeup = <Closeup0 />
+				break;
+			case 1: 
+				break;
+			case 2: 
+				break;
+		}
+
 		return (
 			<div className="FeedCloseup" >
-				{this.props.match.params.feedId}
+				{closeup}
 			</div>
 		);
 	}
