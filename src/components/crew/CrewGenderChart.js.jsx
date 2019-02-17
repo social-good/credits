@@ -40,7 +40,7 @@ export default class CrewGenderChart extends Component {
 				CostumeMakeUp: 	Object.values(DepartmentGenderCounts).map(yearMap => yearMap['CostumeMakeUp']).map(array => array.map(value => value / array.reduce((total, num) => total + num)))
 			},
 			departments: ['Cast','Directing','Writing','Production','Editing','Camera','Crew','VisualEffects','Sound','Art','Lighting','CostumeMakeUp'],
-			displayIndex: this.props.chosenDepartment,
+			displayIndex: (this.props.chosenDepartment ? this.props.chosenDepartment : 'Crew'),
 			genderArray: [[],[],[]].map((array, i) => Object.values(DepartmentGenderCounts).map(yearMap => yearMap[this.props.chosenDepartment]).map(array => array.map(value => value / array.reduce((total, num) => total + num))).map(normalizedYearmap => normalizedYearmap[i]))
 		});
 	}

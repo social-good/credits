@@ -25,9 +25,6 @@ class Homepage extends Component {
 				<Feed />
 				<Team />
 				<Contact />
-				<CrewDepartmentChart />
-				<CrewGenderChart chosenDepartment={'Cast'}/>
-				<CrewDiasporaChart />
 			</div>
 		);
 	}
