@@ -25,6 +25,9 @@ class Homepage extends Component {
 				<Feed />
 				<Team />
 				<Contact />
+				<CrewDepartmentChart />
+				<CrewGenderChart chosenDepartment={'Cast'}/>
+				<CrewDiasporaChart />
 			</div>
 		);
 	}
@@ -32,6 +35,4 @@ class Homepage extends Component {
 
 export default Homepage;
 
-// 				<CrewDepartmentChart />
-				// <CrewGenderChart chosenDepartment={'Cast'}/>
-				// <CrewDiasporaChart />
+
