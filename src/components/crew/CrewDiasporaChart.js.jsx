@@ -11,13 +11,35 @@ export default class CrewDiasporaChart extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			labels: Array.from({length: 119}, (x,i) => `${i + 1900}`),
+			labels: [],
+			datasets: []
 		}; 
 	}
 
 	componentDidMount() {
 		this.setState({
-			diasporaArrays: DiasporaCount
+			labels: Array.from({length: 119}, (x,i) => `${i + 1900}`),
+			datasets: Object.entries(DiasporaCount).map((diasporaCoupling, i) => {
+				return {
+					label: diasporaCoupling[0],
+					lineTension: 0,
+					borderWidth: 1,
+					backgroundColor: `hsla(${i * 7}, 50%, 70%, 0.4)`,
+					borderColor: `hsla(${i * 7}, 50%, 70%, 1.0)`,
+					borderJoinStyle: 'miter',
+					pointBorderColor: `hsla(${i * 7}, 50%, 70%, 1.0)`,
+					pointBackgroundColor: '#fff',
+					pointBorderWidth: 1,
+					pointHoverRadius: 5,
+					pointHoverBackgroundColor: `hsla(${i * 7}, 50%, 70%, 1.0)`,
+					pointHoverBorderColor: 'rgba(220,220,220,1)',
+					pointHoverBorderWidth: 2,
+					pointRadius: 1,
+					pointHitRadius: 10,
+					data: (diasporaCoupling[1] ? diasporaCoupling[1] : null),
+					fill: (i === 0 ? 'origin' : '-1')
+				}
+			})
 		});
 	}
 
@@ -25,45 +47,24 @@ export default class CrewDiasporaChart extends Component {
 		const options = {
 			scales: {
 				yAxes: [{
-					stacked: true
+					stacked: true,
+					ticks: {
+						suggestedMin: 0,
+						suggestedMax: 1.2
+					}
 				}]
 			}
-
 		}
 
 		const data = {
 			labels: this.state.labels,
-			datasets: Object.entries(DiasporaCount).map((diasporaCoupling) => {
-				return {
-					label: diasporaCoupling[0],
-					lineTension: 0.51,
-					borderWidth: 1,
-					backgroundColor: 'rgba(255,170,170,0.4)',
-					borderColor: 'rgba(255,170,170,1)',
-					borderJoinStyle: 'miter',
-					pointBorderColor: 'rgba(255,170,170,1)',
-					pointBackgroundColor: '#fff',
-					pointBorderWidth: 1,
-					pointHoverRadius: 5,
-					pointHoverBackgroundColor: 'rgba(255,170,170,1)',
-					pointHoverBorderColor: 'rgba(220,220,220,1)',
-					pointHoverBorderWidth: 2,
-					pointRadius: 1,
-					pointHitRadius: 10,
-					data: (diasporaCoupling[1] ? diasporaCoupling[1] : null),
-					fill: false
-				}
-			})
-
-			
-
-			
+			datasets: this.state.datasets	
 		};
 		
 		return (
 			<div className="CrewDiasporaChart">
 				<div className="crew-diaspora-chart-graph-container">
-					<Line data={data} options={options} width={4} height={3}/>
+					<Line data={data} options={options} width={14} height={7.5}/>
 				</div>
 			</div>
 		);

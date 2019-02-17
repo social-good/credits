@@ -1,62 +1,37 @@
 import React, { Component } from 'react';
-import {Doughnut} from 'react-chartjs-2';
-import CrewSlider from '../crew/CrewSlider.js.jsx'
+import TopBar from './TopBar.js.jsx';
+
+import CrewDepartmentChart from '../crew/CrewDepartmentChart.js'
 import CrewGenderChart from '../crew/CrewGenderChart.js'
 import CrewDiasporaChart from '../crew/CrewDiasporaChart.js'
 
-// Data
-import Breakdowns from '../../data/topCenturyDepartmentCount.json';
+import HomepageBannerImage from '../../media/images/Credits_Blur_Graph_Superimposed.png';
+import Feed from './Feed.js.jsx'
+import Team from './Team.js.jsx'
+import Contact from './Contact.js.jsx'
+
+import '../../stylesheets/Homepage.css';
 
 class Homepage extends Component {
 
-	constructor(props) {
-		super(props);
-		this.state = {
-			displayYear: 1984
-		}
-
-		this.onSliderMove = this.onSliderMove.bind(this);
-	}
-
-	componentDidMount() {
-
-	}
-
-	onSliderMove(newYear) {
-		this.setState({
-			displayYear: newYear
-		})
-	}
-
 	render() {
-		var charts = [];
-		for (var year in Breakdowns) {
-			var data = {
-				datasets: [{
-					data: Object.values(Breakdowns[year]),
-					backgroundColor: ['#FF6385', '#63FFE0', '#E3FF63',
-						'#FFA063', '#FF63F8', '#6FB8FF',
-						'#FFD763', '#B9FF63', '#6AD2FF',
-						'#FF7563', '#FFCE63', '#A173FF']
-				}],
-				labels: Object.keys(Breakdowns[year])
-
-			}
-			charts.push(
-				<Doughnut data={data} height={80} />
-			)
-		}
-
 		return (
 			<div className="Homepage" >
-				OMG it's the homepage
-				{charts[this.state.displayYear-1900]}
-				<CrewSlider min={1900} max={2018} position={this.state.displayYear} onSlide={this.onSliderMove} />
-				<CrewGenderChart chosenDepartment={'Cast'}/>
-				<CrewDiasporaChart />
+				<TopBar />
+				<div className="homepage-banner-container">
+					<img className="homepage-banner-image" src={HomepageBannerImage} alt={'This did not render'}/>
+					<div className="homepage-banner-header">A DEEPER LOOK AT<br/> THE CREDITS</div>
+				</div>
+				<Feed />
+				<Team />
+				<Contact />
 			</div>
 		);
 	}
 }
 
 export default Homepage;
+
+// 				<CrewDepartmentChart />
+				// <CrewGenderChart chosenDepartment={'Cast'}/>
+				// <CrewDiasporaChart />

@@ -1,0 +1,16 @@
+/* TEAM */
+
+.team-member-box {
+	display: inline-block;
+	padding: 20px;
+	border:  3px #597D86 solid;
+	/*temp to roughly center*/
+	margin: 10%;
+}
+
+.team-member-image {
+	display: inline-block;
+	background-color: lightgray;
+	height: 350px;
+	width: 250px;
+}

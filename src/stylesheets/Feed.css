@@ -1,0 +1,36 @@
+.Feed {
+	width: 65%;
+	margin: auto;
+}
+
+/* FEEDROW */
+
+.FeedRow {
+	width: 100%;
+}
+
+.FeedRow hr {
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 4px;
+	background-color: #96BF7C;
+	border: none;
+}
+
+.feed-row-image {
+	display: inline-block;
+	width: 15%;
+	margin: 15px;
+}
+
+.feed-row-title {
+	width: 80%;
+	display: inline-block;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+	word-wrap: break-word;
+	height: 100px;
+}
