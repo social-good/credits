@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import TopBar from '../homepage/TopBar.js.jsx';
 import CrewDepartmentDonut from '../crew/CrewDepartmentDonut.js.jsx';
 import CrewDepartmentGraph from '../crew/CrewDepartmentGraph.js.jsx';
+import CrewGenderGraph from '../crew/CrewGenderGraph.js.jsx';
 
 export default class Closeup1 extends Component {
 
@@ -27,6 +28,7 @@ export default class Closeup1 extends Component {
 					<CrewDepartmentDonut />
 					<br /> Also I feel like this is more 
 					<CrewDepartmentGraph />
+					<CrewGenderGraph />
 				</div>
 			</div>
 		);
