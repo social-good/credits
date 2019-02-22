@@ -42,6 +42,11 @@ export default class Feed extends Component {
 			linkPath: '2',
 			title: 'Doughnuts, Sliders, and Time Series, Oh My!',
 			content: 'Lorem ipsum dolorem and happy go lucky penguins made it to Madagascar shortly before ad hoc ergot. It is a trivial pursuit if I have ever started on, one in which I could embark for weeks upon days, until the dawn frays.'
+		}, {
+			imagePath: require('../../media/images/Doughnut.png'),
+			linkPath: '3',
+			title: 'Talk to me!',
+			content: 'Lorem ipsum dolorem and happy go lucky penguins made it to Madagascar shortly before ad hoc ergot. It is a trivial pursuit if I have ever started on, one in which I could embark for weeks upon days, until the dawn frays.'
 		}].map(row => 
 			<FeedRow imagePath={row.imagePath} linkPath={row.linkPath} title={row.title} preview={row.content} />
 		)

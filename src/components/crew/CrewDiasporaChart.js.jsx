@@ -4,7 +4,7 @@ import {Line} from 'react-chartjs-2';
 import '../../stylesheets/Crew.css';
 
 // Data
-import DiasporaCount from '../../data/topCenturyDiasporaCount.json';
+import DiasporaCount from '../../data/topCenturyDiasporaCount_1550867466727.json';
 
 export default class CrewDiasporaChart extends Component {
 

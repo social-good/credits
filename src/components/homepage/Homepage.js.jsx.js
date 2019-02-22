@@ -20,7 +20,7 @@ class Homepage extends Component {
 				<TopBar />
 				<div className="homepage-banner-container">
 					<img className="homepage-banner-image" src={HomepageBannerImage} alt={'This did not render'}/>
-					<div className="homepage-banner-header">A DEEPER LOOK AT<br/> THE CREDITS</div>
+					<div className="homepage-banner-header">A DEEPER LOOK INTO<br/> THE CREDITS</div>
 				</div>
 				<Feed />
 				<Team />

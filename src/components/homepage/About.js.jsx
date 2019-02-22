@@ -34,6 +34,8 @@ class About extends Component {
 				<br /> - other NYT article (people change their names)
 				<br /> - Spiderman: Into the Spider-verse
 				<br /> - Annenberg research
+				<br /> - NamSor
+				<br /> - Origins of the photos / how they were doctored. (Including my own creations (star wars and something else...))
 				<Contact />
 			</div>
 		);
