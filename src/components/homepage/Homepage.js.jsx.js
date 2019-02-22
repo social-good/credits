@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TopBar from './TopBar.js.jsx';
 
-import CrewDepartmentChart from '../crew/CrewDepartmentChart.js'
+import CrewDepartmentDonut from '../crew/CrewDepartmentDonut.js'
 import CrewGenderChart from '../crew/CrewGenderChart.js'
 import CrewDiasporaChart from '../crew/CrewDiasporaChart.js'
 

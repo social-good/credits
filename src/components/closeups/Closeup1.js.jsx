@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import TopBar from '../homepage/TopBar.js.jsx';
-import CrewDepartmentChart from '../crew/CrewDepartmentChart.js.jsx';
+import CrewDepartmentDonut from '../crew/CrewDepartmentDonut.js.jsx';
+import CrewDepartmentGraph from '../crew/CrewDepartmentGraph.js.jsx';
 
 export default class Closeup1 extends Component {
 
@@ -23,8 +24,9 @@ export default class Closeup1 extends Component {
 					<br /> And so you'll see for some years that there is anamolous breakdowns.
 					<br /> Which brings us to another thing that we can't find out. How complete the sample is that we've grabbed, because we don't have a way to find the base truth.
 					<br /> Anyhow, it's fun. Play around with the slider (i recommend using the arrow keys) and let me know what you think?
-					<CrewDepartmentChart />
+					<CrewDepartmentDonut />
 					<br /> Also I feel like this is more 
+					<CrewDepartmentGraph />
 				</div>
 			</div>
 		);

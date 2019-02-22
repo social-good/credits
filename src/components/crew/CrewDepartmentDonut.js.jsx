@@ -8,7 +8,7 @@ import '../../stylesheets/Crew.css';
 // Data
 import DepartmentBreakdowns from '../../data/topCenturyDepartmentCount.json';
 
-export default class CrewDepartmentChart extends Component {
+export default class CrewDepartmentDonut extends Component {
 
 	constructor(props) {
 		super(props);
@@ -49,7 +49,7 @@ export default class CrewDepartmentChart extends Component {
 		}
 		
 		return (
-			<div className="CrewDepartmentChart">
+			<div className="CrewDepartmentDonut">
 				{charts[this.state.displayYear-1900]}
 				<CrewSlider min={1900} max={2018} position={this.state.displayYear} onSlide={this.onSliderMove} />
 			</div>
