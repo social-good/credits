@@ -22,12 +22,12 @@ export default class CrewGenderGraph extends Component {
 			datasets: Object.entries(GenderCount).reverse().map((departmentGenderCoupling, i) => {
 				var borderColor = '', fillColor = '';
 				if (departmentGenderCoupling[0] === 'Male') {
-					fillColor = 'rgba(255,170,170,0.4)';
-					borderColor = 'rgba(255,170,170,1)';
-				} else if (departmentGenderCoupling[0] === 'Female') {
 					fillColor = 'rgba(190,190,255,0.4)';
 					borderColor = 'rgba(190,190,255,1)';
 				} else if (departmentGenderCoupling[0] === 'Female') {
+					fillColor = 'rgba(255,170,170,0.4)';
+					borderColor = 'rgba(255,170,170,1)';
+				} else if (departmentGenderCoupling[0] === 'Unknown') {
 					fillColor = 'rgba(200,200,200,0.4)';
 					borderColor = 'rgba(200,200,200,1)';
 				}

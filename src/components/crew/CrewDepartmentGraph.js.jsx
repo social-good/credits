@@ -4,7 +4,7 @@ import {Line} from 'react-chartjs-2';
 import '../../stylesheets/Crew.css';
 
 // Data
-import DepartmentCount from '../../data/topCenturyDepartmentCount_1550873299086.json';
+import DepartmentCount from '../../data/topCenturyDepartmentCount(2)_1550877907275.json';
 
 export default class CrewDepartmentGraph extends Component {
 

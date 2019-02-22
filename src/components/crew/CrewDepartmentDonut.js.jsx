@@ -6,7 +6,7 @@ import CrewSlider from '../crew/CrewSlider.js.jsx'
 import '../../stylesheets/Crew.css';
 
 // Data
-import DepartmentBreakdowns from '../../data/topCenturyDepartmentCount.json';
+import DepartmentBreakdowns from '../../data/topCenturyDepartmentCount(1)_1550877907228.json';
 
 export default class CrewDepartmentDonut extends Component {
 
@@ -27,7 +27,6 @@ export default class CrewDepartmentDonut extends Component {
 			displayYear: newYear
 		})
 	}
-	
 
 	render() {
 		var charts = [];
