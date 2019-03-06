@@ -91,6 +91,11 @@
   border-bottom: none;
 }
 
+
+.rd3t-tree-container.undefined {
+  height: 300px;
+}
+
 /* DIASPORA CHART */
 .DiasporaChartContainer {
   margin: 5%;

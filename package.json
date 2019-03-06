@@ -8,6 +8,7 @@
     "react": "^16.8.2",
     "react-chartjs-2": "^2.7.4",
     "react-chord-diagram": "^1.0.4",
+    "react-d3-tree": "^1.12.2",
     "react-dom": "^16.8.2",
     "react-leaflet": "^2.2.1",
     "react-scripts": "2.1.5"

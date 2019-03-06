@@ -1,12 +1,45 @@
 import React, { Component } from 'react';
+import Tree from 'react-d3-tree';
 
 import TopBar from '../homepage/TopBar.js.jsx';
 import CrewGenderGraph from '../crew/CrewGenderGraph.js.jsx';
 import DiasporaChartContainer from '../crew/DiasporaChartContainer.js.jsx';
 
+import '../../stylesheets/Crew.css'
+
 export default class Closeup2 extends Component {
 
 	render() {
+
+		const myTreeData = [
+		  {
+			name: 'George Clooney',
+			attributes: {
+			  keyA: 'val A',
+			  keyB: 'val B',
+			  keyC: 'val C',
+			},
+			children: [
+			  {
+				name: 'George',
+				attributes: {
+				  keyA: 'val D',
+				  keyB: 'val E',
+				  keyC: 'val F',
+				},
+			  },
+			  {
+				name: 'Clooney',
+			  },
+			],
+		  },
+		];
+
+		const translate = {
+			x: 100,
+			y: 150
+		}
+
 		return (
 			<div className="Closeup2" >
 				<TopBar />
@@ -22,6 +55,8 @@ export default class Closeup2 extends Component {
 					<br /> Coming up: Something even more interesting! (any laggy)
 					<br /> With all of the names acquired from the open-source database TMDb, we have a wealth of onomastic (link) data. Cue NamSor.
 					<br /> NamSor provides an API to determine the diaspora of a person given their name. This is the distribution of countries of likely ethnic origin for the top movie of each year, 1900-2018. 
+
+					<Tree data={myTreeData} zoomable={false} translate={translate} />
 					<DiasporaChartContainer />
 				</div>
 			</div>
