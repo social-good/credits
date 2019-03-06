@@ -4,6 +4,7 @@ import Closeup0 from '../closeups/Closeup0.js.jsx'
 import Closeup1 from '../closeups/Closeup1.js.jsx'
 import Closeup2 from '../closeups/Closeup2.js.jsx'
 import Closeup3 from '../closeups/Closeup3.js.jsx'
+import Closeup4 from '../closeups/Closeup4.js.jsx'
 
 export default class FeedCloseup extends Component {
 
@@ -22,6 +23,10 @@ export default class FeedCloseup extends Component {
 				break;
 			case 3:
 				closeup = <Closeup3 />
+				break;
+			case 4:
+				closeup = <Closeup4 />
+				break;
 		}
 
 		return (

@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "chart.js": "^2.7.3",
+    "leaflet": "^1.4.0",
     "react": "^16.8.2",
     "react-chartjs-2": "^2.7.4",
+    "react-chord-diagram": "^1.0.4",
     "react-dom": "^16.8.2",
+    "react-leaflet": "^2.2.1",
     "react-scripts": "2.1.5"
   },
   "scripts": {

@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import TopBar from './TopBar.js.jsx';
 
-import CrewDepartmentDonut from '../crew/CrewDepartmentDonut.js'
-import CrewGenderChart from '../crew/CrewGenderChart.js'
-import CrewDiasporaChart from '../crew/CrewDiasporaChart.js'
+import CrewDepartmentDonut from '../crew/CrewDepartmentDonut.js';
+import CrewGenderChart from '../crew/CrewGenderChart.js';
+import CrewDiasporaChart from '../crew/CrewDiasporaChart.js';
 
 import HomepageBannerImage from '../../media/images/Credits_Blur_Graph_Superimposed.png';
-import Feed from './Feed.js.jsx'
-import Team from './Team.js.jsx'
-import Contact from './Contact.js.jsx'
+import StoryLine from './StoryLine.js.jsx';
+import Feed from './Feed.js.jsx';
+import Team from './Team.js.jsx';
+import Contact from './Contact.js.jsx';
 
 import '../../stylesheets/Homepage.css';
 

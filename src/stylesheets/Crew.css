@@ -92,11 +92,19 @@
 }
 
 /* DIASPORA CHART */
-.crew-diaspora-chart-graph-container {
-  width: 1400px;
-  height: 750px; 
+.DiasporaChartContainer {
+  margin: 5%;
+  border: 1px #FBA solid;
+}
+
+.crew-diaspora-graph-tab {
   display: inline-block;
-  border: 1px lightblue solid;
-  padding-left: 10px;
+  width: 33%;
+  background-color: #CCC;
+  text-align: center;
+}
+
+.crew-diaspora-graph-tab:hover {
+  background-color: #BBB;
 }
 

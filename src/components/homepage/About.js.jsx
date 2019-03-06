@@ -36,6 +36,7 @@ class About extends Component {
 				<br /> - Annenberg research
 				<br /> - NamSor
 				<br /> - Origins of the photos / how they were doctored. (Including my own creations (star wars and something else...))
+				<br /> - Origin of the lists I'll use (especially Starmeter and user-generated lists).
 				<Contact />
 			</div>
 		);

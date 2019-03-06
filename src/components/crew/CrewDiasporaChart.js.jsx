@@ -4,22 +4,24 @@ import {Line} from 'react-chartjs-2';
 import '../../stylesheets/Crew.css';
 
 // Data
-import DiasporaCount from '../../data/topCenturyDiasporaCount_1550867466727.json';
+import DiasporaCount from '../../data/topCenturyDiasporaCount_1551863234840.json';
 
+// TODO: Rename to 'CrewDiasporaStackedArea'
 export default class CrewDiasporaChart extends Component {
 
 	constructor(props) {
 		super(props);
+		console.log(props);
 		this.state = {
 			labels: [],
-			datasets: []
+			datasets: [],
 		}; 
 	}
 
-	componentDidMount() {
-		this.setState({
-			labels: Array.from({length: 119}, (x,i) => `${i + 1900}`),
-			datasets: Object.entries(DiasporaCount).map((diasporaCoupling, i) => {
+
+	render() {
+
+		const datasets = Object.entries(DiasporaCount).map((diasporaCoupling, i) => {
 				return {
 					label: diasporaCoupling[0],
 					lineTension: 0,
@@ -37,35 +39,31 @@ export default class CrewDiasporaChart extends Component {
 					pointRadius: 1,
 					pointHitRadius: 10,
 					data: (diasporaCoupling[1] ? diasporaCoupling[1] : null),
-					fill: (i === 0 ? 'origin' : '-1')
+					fill: (i === 0 ? 'origin' : '-1'),
+					hidden: (this.props.preset === 0) ? i >= 8 : i <= 40,
 				}
-			})
-		});
-	}
+			});
 
-	render() {
 		const options = {
 			scales: {
 				yAxes: [{
 					stacked: true,
 					ticks: {
 						suggestedMin: 0,
-						suggestedMax: 1.2
+						suggestedMax: (this.props.preset === 0) ? 1.2 : 0.02
 					}
 				}]
-			}
+			},
 		}
 
 		const data = {
-			labels: this.state.labels,
-			datasets: this.state.datasets	
+			labels: Array.from({length: 119}, (x,i) => `${i + 1900}`),
+			datasets: datasets	
 		};
 		
 		return (
 			<div className="CrewDiasporaChart">
-				<div className="crew-diaspora-chart-graph-container">
-					<Line data={data} options={options} width={14} height={7.5}/>
-				</div>
+				<Line data={data} options={options} width={14} height={7.5}/>
 			</div>
 		);
 	}
