@@ -11,8 +11,6 @@ class StoryLine extends Component {
 	render() {
 		return (
 			<div className="StoryLine" >
-				<div className="homepage-banner-container">
-				</div>
 			</div>
 		);
 	}

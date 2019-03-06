@@ -91,12 +91,32 @@
   border-bottom: none;
 }
 
-
-.rd3t-tree-container.undefined {
-  height: 300px;
+/* ONOMASTIC CHART */
+.OnomasticDisplayContainer {
+  margin: 5%;
+  border: 1px #FBA solid;
 }
 
-/* DIASPORA CHART */
+.CrewOnomasticTree {
+  display: inline-block;
+  height: 500px;
+  width: 45%;
+  margin: 2.5%;
+}
+
+.rd3t-tree-container.undefined {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.onomastic-choropleth-image {
+  width: 45%;
+  display: inline-block;
+  margin: 2.5%;
+}
+
+/* DIASPORA STACKED AREA CHART */
 .DiasporaChartContainer {
   margin: 5%;
   border: 1px #FBA solid;
@@ -112,4 +132,6 @@
 .crew-diaspora-graph-tab:hover {
   background-color: #BBB;
 }
+
+/* DEPARTMENT STACKED AREA CHART */
 

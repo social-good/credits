@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import TopBar from './TopBar.js.jsx';
 
 import CrewDepartmentDonut from '../crew/CrewDepartmentDonut.js';
+import CrewDepartmentGraph from '../crew/CrewDepartmentGraph.js.jsx';
 import CrewGenderChart from '../crew/CrewGenderChart.js';
-import CrewDiasporaChart from '../crew/CrewDiasporaChart.js';
+import DiasporaChartContainer from '../crew/DiasporaChartContainer.js.jsx';
+import DepartmentChartContainer from '../crew/DepartmentChartContainer.js.jsx';
+import OnomasticDisplayContainer from '../crew/OnomasticDisplayContainer.js.jsx';
+import CrewChordDiagram from '../crew/CrewChordDiagram.js.jsx'
 
 import HomepageBannerImage from '../../media/images/Credits_Blur_Graph_Superimposed.png';
 import StoryLine from './StoryLine.js.jsx';
@@ -23,7 +27,10 @@ class Homepage extends Component {
 					<img className="homepage-banner-image" src={HomepageBannerImage} alt={'This did not render'}/>
 					<div className="homepage-banner-header">A DEEPER LOOK INTO<br/> THE CREDITS</div>
 				</div>
-				<Feed />
+				<OnomasticDisplayContainer />
+				<CrewChordDiagram />
+				<DiasporaChartContainer />
+				<DepartmentChartContainer />
 				<Team />
 				<Contact />
 			</div>
