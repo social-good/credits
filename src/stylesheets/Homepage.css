@@ -24,8 +24,15 @@
 	top: 0px;
 }
 
-.topbar-topbar {
+.topbar-content {
 	height: 60px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.topbar-space {
+	display: inline-block;
+	width: 15px;
 }
 
 .topbar-bottom-bar {
@@ -86,8 +93,17 @@
 
 /* INTRO */
 .homepage-intro {
-	margin: 5%;
-	margin-bottom: 7%;
+	margin: 2.5%;
+	padding: 2.5%;
 	font-size: 25px;
 	font-weight: bold;
+	background-color: #FDBCBE;
+}
+
+.learn-more {
+	margin-left: 15%;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 10vh;
 }

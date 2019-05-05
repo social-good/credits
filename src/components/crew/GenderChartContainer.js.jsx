@@ -11,7 +11,7 @@ export default class GenderChartContainer extends Component {
 		this.state = {
 			selected: 0,
 			captions: {
-				0:{ configuration: 'Shown is gender breakdown of the five most successful movies as recorded by The Movie Database (as of March 2019).',
+				0:{ configuration: 'Shown is the gender breakdown of the five most successful movies as recorded by The Movie Database (as of March 2019).',
 					explanation: [
 						'At first glance, the most obvious feature of this graph is the minimal contribution of women to the U.S. motion picture industry.',
 						'Then you notice the tremendous amount of UNKNOWN information. Before 1920 and after 1991, over half of the contributors\' genders are unrecorded.',

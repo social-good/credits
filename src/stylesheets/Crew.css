@@ -1,7 +1,14 @@
 /* SLIDER */
 
 .CrewSlider {
-  width: 100%; /* Width of the outside container */
+  width: 80%; /* Width of the outside container */
+  margin-left: 10%;
+}
+
+.crew-slider-year-indicator {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin-left: 44%;
 }
 
 /* The slider itself */

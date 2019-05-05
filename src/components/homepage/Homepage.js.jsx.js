@@ -11,7 +11,6 @@ import OnomasticDisplayContainer from '../crew/OnomasticDisplayContainer.js.jsx'
 import CrewChordDiagram from '../crew/CrewChordDiagram.js.jsx'
 
 import HomepageBannerImage from '../../media/images/Credits_Blur_Graph_Superimposed.png';
-import StoryLine from './StoryLine.js.jsx';
 import Feed from './Feed.js.jsx';
 import Team from './Team.js.jsx';
 import Contact from './Contact.js.jsx';
@@ -23,18 +22,22 @@ class Homepage extends Component {
 	render() {
 		return (
 			<div className="Homepage" >
-				<TopBar />
 				<div className="homepage-banner-container">
 					<img className="homepage-banner-image" src={HomepageBannerImage} alt={'This did not render'}/>
 					<div className="homepage-banner-header">A DEEPER LOOK INTO<br/> THE CREDITS</div>
 				</div>
+				<div className="topbar-bottom-bar"></div>
 				<div className="homepage-intro">
 					Various classifications of the people involved through the history of American film production highlights uneven distributions in ethnonational and gender representation.
 				</div>
+				<TopBar />
 				<GenderChartContainer />
 				<DiasporaChartContainer />
 				<DepartmentChartContainer />
-				Stuff about going back to the other site or reading more about the project and our conclusion.
+				<div className="topbar-bottom-bar"></div>
+				<div className="learn-more">
+					<a href="file:///Users/danielkawalsky/Documents/Code/SocialGood/final-site/index.html">Learn more</a> about this project and our conclusion: <a href="https://towardsdatascience.com/the-trouble-with-classification-312cc6fe8b79">Part I</a> and <a href="https://towardsdatascience.com/spicing-up-feature-film-credits-with-classification-part-ii-c715d8375975">Part II</a>.
+				</div>
 			</div>
 		);
 	}
