@@ -3,9 +3,10 @@ import TopBar from './TopBar.js.jsx';
 
 import CrewDepartmentDonut from '../crew/CrewDepartmentDonut.js';
 import CrewDepartmentGraph from '../crew/CrewDepartmentGraph.js.jsx';
-import CrewGenderChart from '../crew/CrewGenderChart.js';
+import CrewGenderGraph from '../crew/CrewGenderGraph.js';
 import DiasporaChartContainer from '../crew/DiasporaChartContainer.js.jsx';
 import DepartmentChartContainer from '../crew/DepartmentChartContainer.js.jsx';
+import GenderChartContainer from '../crew/GenderChartContainer.js.jsx';
 import OnomasticDisplayContainer from '../crew/OnomasticDisplayContainer.js.jsx';
 import CrewChordDiagram from '../crew/CrewChordDiagram.js.jsx'
 
@@ -27,12 +28,13 @@ class Homepage extends Component {
 					<img className="homepage-banner-image" src={HomepageBannerImage} alt={'This did not render'}/>
 					<div className="homepage-banner-header">A DEEPER LOOK INTO<br/> THE CREDITS</div>
 				</div>
-				<OnomasticDisplayContainer />
-				<CrewChordDiagram />
+				<div className="homepage-intro">
+					Various classifications of the people involved through the history of American film production highlights uneven distributions in ethnonational and gender representation.
+				</div>
+				<GenderChartContainer />
 				<DiasporaChartContainer />
 				<DepartmentChartContainer />
-				<Team />
-				<Contact />
+				Stuff about going back to the other site or reading more about the project and our conclusion.
 			</div>
 		);
 	}

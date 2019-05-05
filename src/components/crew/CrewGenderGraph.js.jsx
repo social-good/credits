@@ -76,9 +76,7 @@ export default class CrewGenderGraph extends Component {
 		
 		return (
 			<div className="CrewGenderGraph">
-				<div className="crew-gender-chart-graph-container">
-					<Line data={data} options={options} width={14} height={7.5}/>
-				</div>
+				<Line data={data} options={options} width={14} height={7.5}/>
 			</div>
 		);
 	}

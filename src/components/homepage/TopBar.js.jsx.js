@@ -7,10 +7,10 @@ class TopBar extends Component {
 		return (
 			<div className="TopBar" >
 				<div className="topbar-topbar">
-					<Link to="/"><div className='topbar-logo-box'>CREW</div></Link>
-					<Link to="/"><div className='topbar-tab-box'>HOME</div></Link>
-					<Link to="/about"><div className='topbar-tab-box'>ABOUT</div></Link>
-					<div className='topbar-tab-box'>SEARCH</div>
+					<a href="file:///Users/danielkawalsky/Documents/Code/SocialGood/final-site/index.html"><div className='topbar-tab-box'>ABOUT THIS PROJECT</div></a>
+					<div className='topbar-tab-box'>OUR CONCLUSION:</div>
+					<a href="https://towardsdatascience.com/the-trouble-with-classification-312cc6fe8b79"><div className='topbar-tab-box'>Part I</div></a>
+					<a href="https://towardsdatascience.com/the-trouble-with-classification-312cc6fe8b79"><div className='topbar-tab-box'>Part II</div></a>
 				</div>
 				<div className="topbar-bottom-bar"></div>
 			</div>

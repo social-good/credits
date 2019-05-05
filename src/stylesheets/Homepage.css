@@ -1,5 +1,22 @@
 /*// D78C8E*/
 
+.mobile-apology {
+	width: 98vw;
+	height: 98vh;
+}
+
+.mobile-apology-header {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 20%;
+}
+.mobile-apology-content {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 20%;
+	margin-top: 0px;
+}
+
 /* TOPBAR */
 .topbar {
 	width: 100%;
@@ -40,7 +57,6 @@
 	background-color: #FFF4BD;
 }
 
-
 /* BANNER */
 .homepage-banner-container {
 	background-color: #FDBCBE;
@@ -66,4 +82,12 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
+}
+
+/* INTRO */
+.homepage-intro {
+	margin: 5%;
+	margin-bottom: 7%;
+	font-size: 25px;
+	font-weight: bold;
 }

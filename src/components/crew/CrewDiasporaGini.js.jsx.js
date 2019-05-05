@@ -17,10 +17,23 @@ export default class CrewDiasporaGini extends Component {
 	}
 
 	componentDidMount() {
+		const fairness = [];
+		const entries = Object.entries(DiasporaCount);
+		for (var year = 0; year < 119; year++) {
+			var fair = 0, top = 0, bottom = 0;
+			for (var j = 0; j < entries.length; j++) {
+				top += entries[j][1][year];
+				bottom += entries[j][1][year] * entries[j][1][year];
+			}
+			fair = (top * top) / (entries.length * bottom);
+			fairness.push(fair);
+		}
+
+
 		this.setState({
 			labels: Array.from({length: 119}, (x,i) => `${i + 1900}`),
 			datasets: [{
-				label: 'Ethnic Gini Coefficient',
+				label: 'Ethnonational Distribution Fairness',
 				lineTension: 0,
 				borderWidth: 1,
 				backgroundColor: `hsla(${100}, 50%, 70%, 0.4)`,
@@ -35,7 +48,7 @@ export default class CrewDiasporaGini extends Component {
 				pointHoverBorderWidth: 2,
 				pointRadius: 1,
 				pointHitRadius: 10,
-				data: Array.from({length: 119}, (x,i) => ((i + 1-2*Math.random())/(i+10)/2)),
+				data: fairness,
 				fill: 0,
 				hidden: false,
 			}]
@@ -49,7 +62,7 @@ export default class CrewDiasporaGini extends Component {
 					stacked: true,
 					ticks: {
 						suggestedMin: 0,
-						suggestedMax: 1.2
+						suggestedMax: 0.1
 					}
 				}]
 			},
