@@ -25,7 +25,7 @@ export default class DiasporaChartContainer extends Component {
 						'This breakdown is of ethnonational contribution to the U.S. film industry, and while a ethnonational group might be negligibly represented here, they might be significantly recognized in another nation\'s film industry.',
 						]
 					},
-				2:{ configuration: 'The "back half," or 40 least significant ethnonational contributors, are shown.',
+				2:{ configuration: 'The fairness of the distribution of credit among ethnonational groups is shown.',
 					explanation: [
 						'Hardly gets more fair as time goes on.',
 						'1961 & 1963: Notice that the British "dips" align with an increase in fairness. When one dominant group subsides, it creates "room" for more diverse ethnic groups to make a more significant contribution.',
