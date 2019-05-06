@@ -32,11 +32,13 @@ class Homepage extends Component {
 				</div>
 				<TopBar />
 				<GenderChartContainer />
-				<DiasporaChartContainer />
+				<div className="homepage-diaspora-section">
+					<DiasporaChartContainer />
+				</div>
 				<DepartmentChartContainer />
 				<div className="topbar-bottom-bar"></div>
 				<div className="learn-more">
-					<a href="file:///Users/danielkawalsky/Documents/Code/SocialGood/final-site/index.html">Learn more</a> about this project and our conclusion: <a href="https://towardsdatascience.com/the-trouble-with-classification-312cc6fe8b79">Part I</a> and <a href="https://towardsdatascience.com/spicing-up-feature-film-credits-with-classification-part-ii-c715d8375975">Part II</a>.
+					<a href="https://social-good.github.io/final-site/">Learn more</a> about this project and our conclusion: <a href="https://towardsdatascience.com/the-trouble-with-classification-312cc6fe8b79">Part I</a> and <a href="https://towardsdatascience.com/spicing-up-feature-film-credits-with-classification-part-ii-c715d8375975">Part II</a>.
 				</div>
 			</div>
 		);

@@ -7,7 +7,7 @@ class TopBar extends Component {
 		return (
 			<div className="TopBar" >
 				<div className="topbar-content">
-					<a href="file:///Users/danielkawalsky/Documents/Code/SocialGood/final-site/index.html">LEARN MORE ABOUT THIS PROJECT </a>
+					<a href="https://social-good.github.io/final-site/">LEARN MORE ABOUT THIS PROJECT </a>
 					<div className="topbar-space" />OUR CONCLUSION:
 					<div className="topbar-space" />
 					<a href="https://towardsdatascience.com/the-trouble-with-classification-312cc6fe8b79">Part I</a>

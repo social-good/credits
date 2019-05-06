@@ -36,7 +36,7 @@
 }
 
 .topbar-bottom-bar {
-	background-color: #D78C8E;
+	background-color: #527A9C;
 	height: 18px;
 	display: block;
 }
@@ -61,12 +61,12 @@
 	font-size: 15px;
 }
 .topbar-tab-box:hover {
-	background-color: #FFF4BD;
+	background-color: #B3CADD;
 }
 
 /* BANNER */
 .homepage-banner-container {
-	background-color: #FDBCBE;
+	background-color: #B3CADD;
 	position: relative;
 	width: 100vw;
 	height: 507px;
@@ -79,6 +79,7 @@
 	text-align: left;
 	color: white;
 	position: absolute;
+	padding: 16px;
 	right: 10%;
 	bottom: 120px;
 }
@@ -97,7 +98,7 @@
 	padding: 2.5%;
 	font-size: 25px;
 	font-weight: bold;
-	background-color: #FDBCBE;
+	background-color: #B3CADD;
 }
 
 .learn-more {
@@ -106,4 +107,14 @@
 	font-style: italic;
 	font-weight: bold;
 	margin-bottom: 10vh;
+}
+
+.homepage-diaspora-section {
+	background-color: #B3CADD;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.DiasporaChartContainer {
+	background-color: white; 
 }
