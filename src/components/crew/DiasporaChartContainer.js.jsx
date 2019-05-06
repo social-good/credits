@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 import CrewDiasporaChart from './CrewDiasporaChart.js.jsx';
 import CrewDiasporaGini from './CrewDiasporaGini.js.jsx';
@@ -39,6 +40,10 @@ export default class DiasporaChartContainer extends Component {
 	onTabClickListener(event, index) {
 		this.setState({
 			selected: index
+		});
+		ReactGA.event({
+			category: 'Chart Container',
+			action: `Selected DiasporaChartContainer index ${index}`
 		});
 	}
 

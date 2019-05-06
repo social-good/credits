@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 import CrewDepartmentGraph from './CrewDepartmentGraph.js.jsx';
 import CrewDepartmentDonut from './CrewDepartmentDonut.js.jsx';
@@ -33,6 +34,10 @@ export default class DepartmentChartContainer extends Component {
 	onTabClickListener(event, index) {
 		this.setState({
 			selected: index
+		});
+		ReactGA.event({
+			category: 'Chart Container',
+			action: `Selected DepartmentChartContainer index ${index}`
 		});
 	}
 

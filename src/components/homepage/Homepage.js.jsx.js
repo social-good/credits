@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
+
 import TopBar from './TopBar.js.jsx';
 
 import CrewDepartmentDonut from '../crew/CrewDepartmentDonut.js';
@@ -18,6 +20,11 @@ import Contact from './Contact.js.jsx';
 import '../../stylesheets/Homepage.css';
 
 class Homepage extends Component {
+
+	componentDidMount() {
+		ReactGA.initialize('UA-123742385-2');
+		ReactGA.pageview('/homepage');
+	}
 
 	render() {
 		return (
