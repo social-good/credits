@@ -7,9 +7,16 @@ import {
   isMobile
 } from "react-device-detect";
 
+import ReactGA from 'react-ga';
+
 import Homepage from './components/homepage/Homepage.js.jsx'
 import About from './components/homepage/About.js.jsx'
 import FeedCloseup from './components/homepage/FeedCloseup.js.jsx'
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-123742385-2');
+    ReactGA.pageview('/homepage');
+}
 
 class App extends Component {
 
